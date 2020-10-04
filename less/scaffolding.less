@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/dosis.woff2"),
+  url("../fonts/dosis.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #fff;
+  font-family: "Dosis","Arial",sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+ul {
+  margin: 0;
+}
