@@ -6,6 +6,8 @@
   text-transform: uppercase;
   font-weight: normal;
   margin: auto;
+  transform: translateX(100px);
+  opacity: 0;
 }
 .topic-title::before {
   content: '';
@@ -13,8 +15,18 @@
   height: 1px;
   position: absolute;
   top: 50%;
-  left: -22%;
+  left: -150%;
   z-index: 0;
   background-color: #000;
+  opacity: 0;
 }
-
+.animated .topic-title {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all ease 1s;
+}
+.animated .topic-title::before {
+  left: -25%;
+  opacity: 1;
+  transition: all ease 1s;
+}
